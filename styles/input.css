@@ -2,12 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+html,body{
+    padding: 0;
+    margin: 0;
+}
 .nav-button{
     @apply px-4 py-4 hover:bg-gray-300 hover:text-black float-left w-full border-none block outline-0 static
 }
-
-.nav-mobile-button{
-
+/* navbar open close effect */
+.navbar-open{
+    animation: 0.5s slide-left;
+}
+@keyframes slide-left {
+    from {
+        margin-left: -200px;
+    }
+    to {
+        margin-left: 0%;
+    }
 }
 
 /* Hamburger Menu */
@@ -43,6 +55,7 @@
 .open {
     transform: rotate(90deg);
     transform: translateY(0px);
+    z-index: 1;
 }
 
 .open .hamburger-top {
@@ -55,4 +68,9 @@
 
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* default for every section */
+section{
+    @apply md:ml-60 h-screen;
 }
