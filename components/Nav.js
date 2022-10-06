@@ -12,7 +12,7 @@ export default function Nav() {
     return (
         <nav>
             {/* navbar */}
-            <div className="h-full hidden md:block w-60 bg-stone-700 text-white fixed  overflow-auto "
+            <div className="h-full hidden md:block w-60 bg-darkerGrayish text-white fixed overflow-auto "
             id="menu"
             ref={menuRef}
             >
@@ -30,7 +30,7 @@ export default function Nav() {
 
             {/* mobile navbar */}
             <div className="md:hidden">
-                <div className="w-full h-auto flex bg-stone-700 p-4">
+                <div className="w-full h-auto flex fixed bg-stone-700 p-4">
                     <button
                         id="menu-btn"
                         ref={menuBtn}
