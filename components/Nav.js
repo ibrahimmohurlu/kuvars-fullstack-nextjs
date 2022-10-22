@@ -21,7 +21,7 @@ export default function Nav() {
                 </div>
                 <div className="w-full min-w-full text-left font-bold text-xl">
                     <a className="nav-button" href="#">Anasayfa</a>
-                    <a className="nav-button" href="#">Hakkımızda</a>
+                    <a className="nav-button" href="#about">Hakkımızda</a>
                     <a className="nav-button" href="#">Projelerimiz</a>
                     <a className="nav-button" href="#">İletişim</a>
                 </div>

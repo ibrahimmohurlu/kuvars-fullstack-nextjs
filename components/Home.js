@@ -3,7 +3,7 @@ import {Card, Carousel} from "flowbite-react";
 export default function Home() {
 
     return (
-        <section className="overflow-auto">
+        <section className="md:max-h-screen ">
             <div className="flex flex-col pt-20 md:pt-0 items-center  rounded-2xl">
                 <img src="/kuvars-logo-dark.png" alt=""/>
                 <p className="px-auto py-4 text-2xl text-center font-semibold">Jeoloji Mühendisliği alanında her
@@ -15,7 +15,7 @@ export default function Home() {
                         <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             Jeoloji Mühendisliği Alanında Kaliteli Hizmet ve Danışmanlık
                         </h1>
-                        <div className="font-normal sm:text-sm md:text-2xl text-darkerGrayish dark:text-gray-400">
+                        <div className="font-normal sm:text-sm md:text-xl text-darkerGrayish dark:text-gray-400">
                             <ul>
                                 <li>Zemin Etüdü</li>
                                 <li>İmar Planına Esas Jeoteknik Etüd</li>

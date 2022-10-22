@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Nav from "../components/Nav";
 import Home from "../components/Home";
+import About from "../components/About";
 
 export default function Index() {
     return (
@@ -13,16 +14,11 @@ export default function Index() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <main className="bg-lightWhite">
-                <Nav/>
+            <main className="">
                 <Home/>
-
-
+                <About/>
             </main>
 
-            <footer>
-
-            </footer>
         </div>
     )
 }
